@@ -51,11 +51,16 @@
         backcolor: 
     */
     function NodeLogo(options){
+        // 找到存放容器
         var container = document.getElementById(options.container);
         if(!container){
             throw new Error('Container were not found');
             return;
         }
+        //  设定默认值
+        options.width = options.width || 100;
+        options.backcolor = options.backcolor || '#5eb95e'
+
         var hex = cDom('div')
             , hex1 = cDom('div')
             , hex2 = cDom('div')
