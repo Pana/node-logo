@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node.js Html Logo</title>
+    <script type="text/javascript" src='/hexa.js'></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        header{
+            text-align: center;
+        }
+        header h1{
+            font-size: 500%;
+            margin: 0;
+            padding: 0;
+            color: #1f8dd6;
+            font-weight: 100;
+        }
+        #container>div, #container1>div,#container2>div,#container3>div,#container4>div{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NodeLogo test</h1>
+    </header>
+    
+    <div id='container'></div>
+    <div id='container1'></div>
+    <div id='container2'></div>
+    <div id='container3'></div>
+    <div id='container4'></div>
+
+    <script type="text/javascript">
+
+        var logo1 = new NodeLogo({
+            container: 'container',
+            width: 10,
+            backcolor: '#dd514c'
+        });
+
+        var logo2 = new NodeLogo({
+            container: 'container1',
+            width: 50,
+            backcolor: '#0e90d2'
+        });
+
+        var logo = new NodeLogo({
+            container: 'container2'
+        });
+
+
+        var logo3 = new NodeLogo({
+            container: 'container3',
+            width: 150,
+            backcolor: 'rgb(128, 88, 165)'
+        });
+
+        var logo4 = new NodeLogo({
+            container: 'container4',
+            width: 200,
+            backcolor: 'rgb(250, 210, 50)'
+        });
+
+    </script>
+
+</body>
+</html>
