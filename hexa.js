@@ -30,16 +30,17 @@
     /*
         样式
     */
-    function hexaStyle(id, width, color){
+    function hexaStyle(id, opts){
         var dom = cDom('style')
             , idS = '#' + id
-            , height = width
-            , paddingTop = parseInt(width/2)
-            , lWidth = parseInt(width * RATIO)
-            , containerHei = width + paddingTop
+            , height = opts.width
+            , paddingTop = parseInt(height/2)
+            , lWidth = parseInt(height * RATIO)
+            , containerHei = height + paddingTop
         var style = idS + '{width:' + lWidth + 'px;padding-top:' + paddingTop + 'px;height: ' + containerHei + 'px;}';
-        style += idS + ' .hex{width:' + lWidth + 'px;height:' + height + 'px;background-color:' + color + '}';
+        style += idS + ' .hex{width:' + lWidth + 'px;height:' + height + 'px;background-color:' + opts.backcolor + '}';
         dom.innerHTML = style;
+        console.log(dom)
         return dom;
     }
 
@@ -68,7 +69,7 @@
         hex.appendChild(hex1);
         hex.appendChild(hex2);
         hex.appendChild(hex3);
-        var styleDom = hexaStyle(id, options.width, options.backcolor);
+        var styleDom = hexaStyle(id, options);
         hex.appendChild(styleDom);
         container.appendChild(hex);
     }
