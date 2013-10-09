@@ -23,8 +23,9 @@
     /*
         id生成器
     */
+    var num = 0; // logo数量
     function idGenerator(){
-        return 'hexo'+ Date.now();
+        return 'hexo'+ (num++);
     }
 
     /*
