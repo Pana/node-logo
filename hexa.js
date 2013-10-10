@@ -41,7 +41,6 @@
         var style = idS + '{width:' + lWidth + 'px;padding-top:' + paddingTop + 'px;height: ' + containerHei + 'px;}';
         style += idS + ' .hex{width:' + lWidth + 'px;height:' + height + 'px;background-color:' + opts.backcolor + '}';
         dom.innerHTML = style;
-        console.log(dom)
         return dom;
     }
 
