@@ -43,8 +43,6 @@
             return [item[0]+1, item[1]+1];
         });
 
-        console.log(points)
-
         return points;
     };
 

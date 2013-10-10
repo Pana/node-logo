@@ -38,3 +38,17 @@ option:
 
 # three.js version
 
+
+## TODO
+
+# 更多形式
+# 允许动画
+
+
+## 可使用库
+
+* http://raphaeljs.com/
+* https://github.com/wout/svg.js
+* [svg 介绍](http://www.ibm.com/developerworks/cn/web/1107_pangjun_svgcanvas1/)
+* http://bonsaijs.org/
+
