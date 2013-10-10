@@ -38,10 +38,3 @@ option:
 
 # three.js version
 
-
-
-## 其他实现
-
-* canvas version
-* svg version
-* 3D version  three.js
