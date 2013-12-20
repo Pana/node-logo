@@ -29,6 +29,8 @@ option:
 # canvas version
 使用canvas画图发现的问题, 斜边会有锯齿效果(难道是画得有问题), 边的效果需要特殊处理
 
+# char version
+直接使用六边形字符,参看char-logo.html
 
 # svg version
 使用svg画出的效果较好, 需要实现一种方便的方式使用.
